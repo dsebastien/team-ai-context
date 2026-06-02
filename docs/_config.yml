@@ -1,0 +1,22 @@
+title: Team Context Template
+description: User guide for the Team Context Template repository.
+url: https://<your-org-or-user>.github.io
+baseurl: /<repository-name>
+
+remote_theme: just-the-docs/just-the-docs
+
+plugins:
+  - jekyll-remote-theme
+
+aux_links:
+  GitHub Repository: https://github.com/<owner>/<repository>
+
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 2
+  preview_words_before: 5
+  preview_words_after: 10
+
+heading_anchors: true
+color_scheme: light
