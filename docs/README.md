@@ -14,6 +14,7 @@ The template helps teams document who they are, what they own, how they work, an
 
 - a quick start guide
 - an explanation of the repository structure
+- note guidance for the main note types
 - guidance for customizing the template
 - GitHub Pages deployment notes
 
@@ -21,5 +22,6 @@ The template helps teams document who they are, what they own, how they work, an
 
 1. Read [Getting Started](getting-started.md).
 2. Review [Repository Structure](repository-structure.md).
-3. Follow [Customization Guide](customization.md).
-4. When ready, configure [GitHub Pages](github-pages.md).
+3. Review [Note Guidance](note-guidance.md).
+4. Follow [Customization Guide](customization.md).
+5. When ready, configure [GitHub Pages](github-pages.md).

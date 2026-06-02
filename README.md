@@ -15,11 +15,12 @@ It is designed to work for most organizations, not just software teams. You can 
 ## Quick Start
 
 1. Create a repository from this template.
-2. Read [[TEMPLATE_SETUP]].
-3. Replace placeholders in [[Team]], [[Company/Company]], [[Team Responsibilities]], and [[Terms and Abbreviations]].
-4. Define your rules in [[Team Rules]], [[Team Conventions]], and [[Team Definition of Done]].
-5. Tailor [[Responsibilities/Responsibilities]] to match your ownership model.
-6. Add your first real entries under `Projects/`, `Plans/`, `Decisions/`, `Meetings/`, and `History/`.
+2. Read [[docs/getting-started]].
+3. Add team identity notes under `Team/` and update [[Terms and Abbreviations]].
+4. Add organization context notes under `Company/` and stakeholder/customer notes under `Customers/`.
+5. Define your mandatory rules under `Rules/`, then fill [[Team Conventions]] and [[Team Definition of Done]].
+6. Tailor the `Responsibilities/` folder to match your ownership model.
+7. Add your first real entries under `Projects/`, `Plans/`, `Decisions/`, `Meetings/`, and `History/`.
 
 ## Repository Guide
 
@@ -37,14 +38,9 @@ It is designed to work for most organizations, not just software teams. You can 
 
 ## Core Notes
 
-- [[Team]]
-- [[Team Rules]]
 - [[Team Conventions]]
 - [[Team Definition of Done]]
-- [[Team Customers]]
-- [[Team Responsibilities]]
 - [[Structure]]
-- [[TEMPLATE_SETUP]]
 
 ## Publishing the User Guide
 

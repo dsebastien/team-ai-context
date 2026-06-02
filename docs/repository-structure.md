@@ -17,6 +17,8 @@ These notes usually change slowly:
 - organization context
 - customers and stakeholders
 
+The root notes in this category are intentionally lightweight. The repository favors short note stubs plus fuller explanation in `Structure.md` and this docs site.
+
 ## Stable Context Folders
 
 Some stable context belongs in folders rather than single root notes:
@@ -69,11 +71,21 @@ Keep `Projects/` empty until you have a real initiative to document.
 
 When you do:
 
-- keep `Projects/Conventions.md` for shared project/repository conventions
+- keep `Projects/Conventions.md` for shared project conventions
 - create one folder per project or initiative
 - add one main note named after that project
 - link it to related responsibilities, plans, or repositories when relevant
 
+## Repositories
+
+Keep `Repositories/` empty until you have real repository notes to track.
+
+When you do:
+
+- keep `Repositories/Repository Conventions.md` for shared repository conventions
+- group notes by forge or platform
+- then group them by org, team, namespace, or similar structure when useful
+- add repository notes only when they provide useful context for the team
 ## Responsibilities
 
 Keep `Responsibilities/` minimal until you are ready to define real ownership areas.
@@ -116,6 +128,21 @@ Use `Rules/` for mandatory guidance such as:
 - approval rules
 - documentation rules
 - change control rules
+
+## Root Note Style
+
+For lightweight root notes such as:
+
+- `Team Conventions.md`
+- `Team Definition of Done.md`
+- `Terms and Abbreviations.md`
+
+prefer a minimal placeholder in the note itself and keep the fuller explanation in:
+
+- `Structure.md`
+- the `docs/` site
+
+See [Note Guidance](note-guidance.md) for the detailed note-content guidance.
 
 ## Naming Rules
 

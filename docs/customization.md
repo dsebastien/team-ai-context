@@ -15,6 +15,7 @@ Customize it by replacing placeholders and removing sections your team does not 
 - adjust folder structure
 - remove repository tracking if your team does not need it
 - add process-specific folders
+- adjust the onboarding sequence in the getting-started guide if your team has extra access or compliance steps
 - add more guidance in team rules and conventions
 - replace empty placeholder folders with real content only when needed
 - add organization notes under `Company/` only if they help explain the team context
@@ -34,5 +35,6 @@ Before making the repository public:
 
 - remove internal names and URLs
 - confirm the `LICENSE` line
+- review `README.md` and the getting-started guide for internal wording
 - review docs site placeholders
 - review `.mcp.json` placeholders
