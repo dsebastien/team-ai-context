@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "example-server": {
+      "command": "npx",
+      "args": [
+        "example-mcp-server"
+      ],
+      "timeout": 120000,
+      "env": {
+        "EXAMPLE_API_URL": "$EXAMPLE_API_URL",
+        "EXAMPLE_API_TOKEN": "$EXAMPLE_API_TOKEN"
+      }
+    }
+  }
+}
