@@ -1,0 +1,28 @@
+name: Improvement or suggestion
+description: Suggest a new folder, convention, doc page, or other improvement to the structure or guidance.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keep proposals organization-neutral and broadly reusable. No private names, secrets, or internal-only URLs.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to change or add?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this useful?
+      description: What problem does it solve — ideally for more than one kind of team?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Affected areas
+      description: Which folders, notes, conventions, or docs would change?
+    validations:
+      required: false

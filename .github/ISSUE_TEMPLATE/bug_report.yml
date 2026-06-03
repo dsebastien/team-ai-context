@@ -1,0 +1,47 @@
+name: Bug report
+description: Report something broken — a build or Pages error, a broken link, an incorrect convention, or a docs problem.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve this repository. Please keep the report organization-neutral and do not include any private names, secrets, or tokens.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Docs site
+        - Repository structure or naming conventions
+        - Rules, conventions, or guidance
+        - Tooling (skills, commands, MCP, workflows, ...)
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe what went wrong — for example, a broken link, a build failure, or a convention that contradicts the docs.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we see the problem? Include URLs, file paths, or a build log link where useful.
+    validations:
+      required: false
+  - type: input
+    id: location
+    attributes:
+      label: Where? (file, folder, or URL)
+      description: The file, folder, or page the problem is in, if you know it.
+    validations:
+      required: false
