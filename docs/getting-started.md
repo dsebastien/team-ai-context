@@ -57,7 +57,7 @@ Start adding:
 
 ## 6. Configure Tooling
 
-- update `.mcp.json` if you use MCP servers
+- update `.mcp.json` if you use MCP servers — see [Tooling and Secrets](tooling.md)
 - add tool notes under `Resources/Tools/`
 - add scripts or templates under `Resources/Scripts/` and `Resources/Templates/`
 - keep secrets outside Git
