@@ -26,6 +26,7 @@ These root notes are intentionally lightweight. Use them as entry points, then k
 - `Repositories/`: source or configuration repositories, when relevant
 - `Resources/`: reusable templates, scripts, and references
 - `Responsibilities/`: responsibility groups and ownership areas
+- `AI/`: AI- and agent-related context: conversations, memory, agent rules, prompts, and personas
 - `docs/`: GitHub Pages-friendly user guide
 
 ## Naming Conventions
@@ -138,6 +139,26 @@ Use `Responsibilities/` to document long-lived ownership areas.
 - Add notes inside a responsibility-area folder only when needed.
 
 For note-content guidance and examples, use the docs site rather than this file.
+
+### AI
+
+Use `AI/` for AI- and agent-related context. This is distinct from machine-read
+tool configuration under `.agents/skills/`, `.claude/`, and `.github/`. Keep
+entries curated and free of secrets, tokens, or personal data; redact
+transcripts before saving.
+
+- `AI/Conversations/`: curated transcripts of notable AI sessions (time-bound).
+  - `AI/Conversations/YYYY/MM/YYYY-MM-DD - AI Conversation - <title>.md`
+- `AI/Memory/`: durable, team-shared facts and context for agents (time-bound).
+  - `AI/Memory/YYYY/MM/YYYY-MM-DD - AI Memory - <title>.md`
+- `AI/Rules/`: agent-behavior rules and guardrails for this repository, referenced from [[AGENTS]]. Root `Rules/` stays for team/operating rules; `AI/Rules/` is for how agents should behave here.
+  - `AI/Rules/AI Rule - <topic>.md`
+- `AI/Prompts/`: a shared, human-facing prompt library — prompts team members copy and paste into AI tools, useful when a skill cannot be used directly.
+  - `AI/Prompts/AI Prompt - <topic>.md`
+- `AI/Personas/`: optional agent or role definitions.
+  - `AI/Personas/AI Persona - <name>.md`
+
+Keep `AI/` subfolders empty except for `.gitkeep` until you have real content to add.
 
 ## Cross-Linking Rules
 

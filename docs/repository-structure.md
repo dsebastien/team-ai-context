@@ -45,6 +45,20 @@ These folders capture change over time:
 - `Processes/` for repeatable workflows
 - `Resources/` for scripts, templates, and tool references
 
+## AI Workspace
+
+Use `AI/` for AI- and agent-related context. This is curated knowledge, kept separate from machine-read tool configuration under `.agents/skills/`, `.claude/`, and `.github/`.
+
+- `AI/Conversations/` — curated transcripts of notable AI sessions (time-based)
+- `AI/Memory/` — durable, team-shared facts and context for agents (time-based)
+- `AI/Rules/` — agent-behavior rules and guardrails for this repository
+- `AI/Prompts/` — a shared, human-facing prompt library: prompts team members copy and paste into AI tools, useful when a skill cannot be used directly
+- `AI/Personas/` — optional agent or role definitions
+
+`AI/Rules/` is for how agents should behave in this repository; mandatory team and operating rules stay in `Rules/`. The repository's `AGENTS.md` is the short entry point that links into `AI/Rules/` and `AI/Memory/`.
+
+Keep entries curated and free of secrets, tokens, or personal data; redact transcripts before saving.
+
 ## Empty Folders vs Placeholder Notes
 
 This template prefers empty folders with `.gitkeep` files over placeholder notes that repeat the structure guidance.
@@ -62,6 +76,11 @@ Use that pattern for folders such as:
 - `Resources/Scripts/`
 - `Resources/Templates/`
 - `Resources/Tools/`
+- `AI/Conversations/`
+- `AI/Memory/`
+- `AI/Rules/`
+- `AI/Prompts/`
+- `AI/Personas/`
 
 `Team/`, `Company/`, `Customers/`, `Rules/`, and `Responsibilities/` also start empty by default. Add real notes there only when you have useful context to capture.
 
@@ -155,3 +174,11 @@ Recommended patterns:
 - `YYYY-MM-DD - Meeting - <title>.md`
 - `YYYY-MM-DD - Goal - <title>.md`
 - `YYYY-MM-DD - Plan - <title>.md`
+
+The `AI/` workspace uses its own patterns:
+
+- `AI/Conversations/YYYY/MM/YYYY-MM-DD - AI Conversation - <title>.md`
+- `AI/Memory/YYYY/MM/YYYY-MM-DD - AI Memory - <title>.md`
+- `AI/Rules/AI Rule - <topic>.md`
+- `AI/Prompts/AI Prompt - <topic>.md`
+- `AI/Personas/AI Persona - <name>.md`
