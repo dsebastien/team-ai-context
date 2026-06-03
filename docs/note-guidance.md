@@ -156,6 +156,10 @@ Use `Repositories/` for source or configuration repositories when relevant. Keep
 
 Use `Responsibilities/` for durable ownership areas. Create folders only when you are ready to name real areas of responsibility.
 
+### Offerings
+
+Use `Offerings/` for the products and services the team provides, as one typed catalog (one note per offering, `Type: product | service` recorded in the note). An offering note is a scannable entry point: summary, audience, owner, how to access it, where to report issues, and links out to operation guides, repositories, and related decisions. Keep runbooks and procedures in `Processes/`/`Routines/` and link to them.
+
 ### Communication
 
 Use `Communication/` for how the team communicates, for both people and automated assistants:

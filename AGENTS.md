@@ -26,6 +26,7 @@ Any automated assistant used with this repository should follow these rules.
 - Determine whether the request is about:
   - a team/portfolio initiative documented under `Projects/`
   - a repository documented under `Repositories/`
+  - an offering (product or service) documented under `Offerings/`
   - a process, responsibility, or organizational topic documented elsewhere in the repository
   - ...
 - When working on a project for the first time, read [[Projects/Project Conventions]] and [[Projects/Project Rules]].

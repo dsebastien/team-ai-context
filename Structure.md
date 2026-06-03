@@ -15,6 +15,7 @@ These root notes are intentionally lightweight. Use them as entry points, then k
 - `Team/`: team identity, mandate, members, and internal organization
 - `Company/`: organization context
 - `Customers/`: stakeholder, customer, audience, or beneficiary context
+- `Offerings/`: products and services the team provides
 - `Rules/`: mandatory team or operating rules
 - `Decisions/`: decisions and rationale
 - `Goals/`: goals and outcomes
@@ -148,6 +149,27 @@ Rules vs conventions:
 - `Repository Conventions.md` is for recommended, stable practices — the "should" (for example: branch naming, commit message style, how repository notes are grouped).
 - Mandatory rules that apply team-wide, not just to repository work, stay under `Rules/`. `Repository Rules.md` is the repository-specific complement; cross-link the two when they relate.
 
+### Offerings
+
+Use `Offerings/` for what the team provides to others — its products and services.
+A single typed catalog: one note per offering, with its type recorded in the note
+rather than split into separate folders.
+
+- One note per offering: `Offerings/<offering name>.md`.
+- Record `Type` (product | service) and `Status` (active | retired) at the top of the note.
+- Each note covers: summary and audience (→ `Customers/`), owner (→ `Responsibilities/`), how to access/reach it, where and how to report issues (→ ticketing and [[Communication/Channels]]), links to operation guides/runbooks (→ `Processes/`, `Routines/`), and related repositories, decisions, and dependencies.
+- Keep heavy operational detail (runbooks, procedures) in `Processes/`/`Routines/` and link to it; keep the offering note a scannable entry point.
+- Keep `Offerings/` empty except for `.gitkeep` until the team has real offerings to document.
+
+Offerings vs responsibilities:
+
+- An **offering** is a *thing the team delivers* (a product or service), defined by what it is and how it is accessed and operated.
+- A **responsibility** is an *area the team is accountable for*, defined by its scope of ownership and who holds it.
+- A responsibility owns/covers offerings — and also non-offering things (a tool, a vendor relationship, security, on-call). An offering has one owning responsibility; a responsibility may cover several offerings or none.
+- Even when they share a name (e.g. "Billing"), keep both: the offering note is the catalog entry (access, issues, operation); the responsibility note is the ownership and scope. Cross-link them.
+
+`Offerings/` is what the team *provides*. Tools and platforms the team *uses* are tracked separately (see `Resources/Tools/`). Do not redefine metrics or responsibilities here — link to them.
+
 ### Responsibilities
 
 Use `Responsibilities/` to document long-lived ownership areas.
@@ -155,6 +177,8 @@ Use `Responsibilities/` to document long-lived ownership areas.
 - Keep `Responsibilities/` empty except for `.gitkeep` files until you define real responsibility areas.
 - Create one folder per real responsibility area only when you are ready to name it.
 - Add notes inside a responsibility-area folder only when needed.
+
+A responsibility is an *area of accountability*, not a thing the team delivers. Products and services live in `Offerings/` and link back to the responsibility that owns them.
 
 For note-content guidance and examples, use the docs site rather than this file.
 
@@ -226,6 +250,46 @@ finished project moves `Projects/Acme/Acme.md` to `Archives/Projects/Acme/Acme.m
 - Archived content is inactive history: treat it as a record, not as current guidance.
 - Append-only logs (`Decisions/`, `History/`, `Meetings/`) are usually not archived; they already record the past.
 - Links: prefer name-based wikilinks (`[[Acme]]`) over path-based ones (`[[Projects/Acme/Acme]]`) so links survive a move. When you archive an item, update any path-based links that pointed to it.
+
+## How Notes Relate
+
+The folders are nodes in a small graph; the wikilinks between notes are the edges.
+Read each line as a sentence ("a project advances a goal"). These links are what
+make the repository navigable for both people and automated assistants.
+
+```
+Responsibilities ──own──▶ Offerings ──serve──▶ Customers
+        │                    ▲
+        │ own                │ produce / change
+        ▼                    │
+   Goals ◀──advance── Projects
+```
+
+Core spine:
+
+- A **responsibility** owns **offerings**, **repositories**, **processes**, **routines**, and **goals** (and the tools it administers).
+- An **offering** is owned by one responsibility, serves **customers**, is built or changed by **projects**, may live in **repositories**, is operated via **processes**/**routines**, and has issues reported through **communication** channels.
+- A **project** advances one or more **goals**, produces or changes **offerings**, uses **repositories** and tools, and is recorded through **decisions** and **meetings**.
+- A **goal** sets a target, is pursued by **projects** and **plans**, and is owned by a **responsibility**.
+
+Work and cadence:
+
+- A **routine** is a recurring practice; it runs a **process**, and its occurrences are recorded as **meetings**.
+- A **process** is an on-demand workflow that operates offerings or systems.
+- **Rules**, **conventions**, and the **Definition of Done** govern how work in projects, repositories, processes, and routines is done.
+
+Meaning and communication:
+
+- **Terms and Abbreviations** define the vocabulary used across every note.
+- **Communication** sets how the team writes and speaks; its **channels** are referenced by offerings (issue reporting) and routines (where they happen). **Customers** are served by offerings and communicated with per communication.
+
+Records and lifecycle:
+
+- **Decisions** capture choices and rationale, **meetings** capture what happened, **history** is the factual timeline; **plans** and **goals** look forward.
+- **AI/Rules** govern assistant behavior, **AI/Memory** holds durable context for assistants, **AI/Prompts** is a human prompt library, and **AI/Conversations** records notable sessions.
+- **Archives/** holds inactive copies of any of the above, mirroring the original folder.
+
+For assistants, answering a question is often graph traversal — e.g. "who do I contact about offering X?" → offering → owning **responsibility** + issue **channel**; "why does goal Y matter?" → goal ← **project** ← **decision**.
 
 ## Cross-Linking Rules
 

@@ -100,23 +100,26 @@ Keep the rules-vs-conventions distinction throughout: a **Rule** is mandatory an
 **k. Repository conventions, rules + tracked repos** → `Repositories/Repository Conventions.md`, `Repositories/Repository Rules.md`, `Repositories/<forge>/<group>/Repository - <name>.md`
 - Replace the `...` stubs: `Repository Conventions.md` ("should") and `Repository Rules.md` (mandatory rules for repository work — "must"). Add repo notes grouped by forge then org/group, only if the team tracks repos here. Link repos to responsibilities.
 
-**l. Processes** → `Processes/`
+**l. Offerings** → `Offerings/`
+- What the team provides to others — products and services — as a single typed catalog (one note per offering; record `Type` product|service and `Status`). Capture summary, audience (→ `Customers/`), owner (→ `Responsibilities/`), how to access it, where to report issues, and links to operation guides (→ `Processes/`/`Routines/`). Create notes only for real offerings; otherwise leave empty.
+
+**m. Processes** → `Processes/`
 - Repeatable workflows/procedures the team runs. One note per process.
 
-**m. Routines** → `Routines/`
+**n. Routines** → `Routines/`
 - Recurring, cadence-based practices (standups, retros, planning, reviews, 1:1s, on-call handoffs). One note per routine (`Routine - <name>.md`) with cadence as a field. Distinct from `Processes/` (on-demand workflows) and `Meetings/` (dated instances). Create notes only for routines the team actually runs; otherwise leave empty.
 
-**n. AI workspace** → `AI/`
+**o. AI workspace** → `AI/`
 - `AI/Rules/` (`AI Rule - <topic>.md`): how automated assistants should behave in this repo.
 - `AI/Prompts/` (`AI Prompt - <topic>.md`): a shared, human-facing prompt library for tools where skills can't be used directly.
 - `AI/Personas/` (`AI Persona - <name>.md`): optional agent/role definitions.
 - `AI/Memory/` and `AI/Conversations/` are time-bound (`YYYY/MM/...`) and normally accumulate over time — leave them empty at init unless the user already has durable context or transcripts to seed.
 - Never commit secrets, tokens, or personal data; redact transcripts.
 
-**o. Tooling & MCP** → `.mcp.json`, `Resources/`
+**p. Tooling & MCP** → `.mcp.json`, `Resources/`
 - Replace the `example-server` placeholder in `.mcp.json` with real MCP servers, or remove the file if unused. Add tool notes under `Resources/Tools/`, scripts under `Resources/Scripts/`, templates under `Resources/Templates/`.
 
-**p. License** → `LICENSE`
+**q. License** → `LICENSE`
 - Confirm the copyright holder line names the right owner.
 
 `Archives/`, `AI/Conversations/`, and `AI/Memory/` stay empty at init — they fill over time (archiving items, accumulating transcripts/memory). Do not interview for them; leave their `.gitkeep` in place.

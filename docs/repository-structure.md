@@ -111,6 +111,7 @@ Use that pattern for folders such as:
 - `Processes/`
 - `Routines/`
 - `Repositories/`
+- `Offerings/`
 - `Resources/Scripts/`
 - `Resources/Templates/`
 - `Resources/Tools/`
@@ -151,6 +152,19 @@ When you do:
 
 Team-wide mandatory rules that are not specific to repository work stay under `Rules/`.
 
+## Offerings
+
+Use `Offerings/` for what the team provides to others — its products and services — as a single typed catalog.
+
+- one note per offering: `Offerings/<offering name>.md`
+- record `Type` (product | service) and `Status` (active | retired) at the top of the note
+- cover summary and audience (→ `Customers/`), owner (→ `Responsibilities/`), how to access it, where to report issues (→ ticketing + `Communication/Channels`), and links to operation guides (→ `Processes/`/`Routines/`)
+- keep `Offerings/` empty until the team has real offerings to document
+
+`Offerings/` is what the team *provides*; tools and platforms it *uses* are tracked separately. Link to metrics, responsibilities, and repositories rather than redefining them here.
+
+An offering is a *thing the team delivers*; a responsibility is an *area the team is accountable for*. A responsibility owns offerings (and other things, like tools or on-call); an offering has one owning responsibility. Even when they share a name, keep both — the offering note is the catalog entry (access, issues, operation), the responsibility note is the ownership and scope — and cross-link them.
+
 ## Responsibilities
 
 Keep `Responsibilities/` minimal until you are ready to define real ownership areas.
@@ -160,6 +174,8 @@ When you do:
 - create one folder per responsibility area
 - give the folder a durable name based on ownership
 - add notes inside it only when needed
+
+A responsibility is an *area of accountability*, not a thing the team delivers. Products and services live in `Offerings/` and link back to the responsibility that owns them.
 
 ## Company and Customers
 
@@ -239,3 +255,41 @@ The `AI/` workspace uses its own patterns:
 - `AI/Rules/AI Rule - <topic>.md`
 - `AI/Prompts/AI Prompt - <topic>.md`
 - `AI/Personas/AI Persona - <name>.md`
+
+## How Notes Relate
+
+The folders are nodes in a small graph; the links between notes are the edges. Read each line as a sentence ("a project advances a goal"). These links are what make the repository navigable for both people and automated assistants.
+
+```
+Responsibilities ──own──▶ Offerings ──serve──▶ Customers
+        │                    ▲
+        │ own                │ produce / change
+        ▼                    │
+   Goals ◀──advance── Projects
+```
+
+**Core spine**
+
+- A **responsibility** owns **offerings**, **repositories**, **processes**, **routines**, and **goals** (and the tools it administers).
+- An **offering** is owned by one responsibility, serves **customers**, is built or changed by **projects**, may live in **repositories**, is operated via **processes**/**routines**, and has issues reported through **communication** channels.
+- A **project** advances one or more **goals**, produces or changes **offerings**, uses **repositories** and tools, and is recorded through **decisions** and **meetings**.
+- A **goal** sets a target, is pursued by **projects** and **plans**, and is owned by a **responsibility**.
+
+**Work and cadence**
+
+- A **routine** is a recurring practice; it runs a **process**, and its occurrences are recorded as **meetings**.
+- A **process** is an on-demand workflow that operates offerings or systems.
+- **Rules**, **conventions**, and the **Definition of Done** govern how work in projects, repositories, processes, and routines is done.
+
+**Meaning and communication**
+
+- **Terms and Abbreviations** define the vocabulary used across every note.
+- **Communication** sets how the team writes and speaks; its **channels** are referenced by offerings (issue reporting) and routines (where they happen). **Customers** are served by offerings and communicated with per communication.
+
+**Records and lifecycle**
+
+- **Decisions** capture choices and rationale, **meetings** capture what happened, **history** is the factual timeline; **plans** and **goals** look forward.
+- **AI/Rules** govern assistant behavior, **AI/Memory** holds durable context, **AI/Prompts** is a human prompt library, and **AI/Conversations** records notable sessions.
+- **Archives/** holds inactive copies of any of the above, mirroring the original folder.
+
+For assistants, answering a question is often graph traversal — for example, "who do I contact about offering X?" follows offering → owning **responsibility** + issue **channel**; "why does goal Y matter?" follows goal ← **project** ← **decision**.
