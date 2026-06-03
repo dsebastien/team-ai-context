@@ -42,10 +42,6 @@ It is designed to work for most organizations, not just software teams. You can 
 - [[Definition of Done]]
 - [[Structure]]
 
-## Publishing the User Guide
-
-The `docs/` folder contains a GitHub Pages-friendly user guide. See `docs/github-pages.md` for setup guidance after the repository is published.
-
 ## License
 
 This template is distributed under the MIT License. See `LICENSE`.
