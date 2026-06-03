@@ -1,0 +1,44 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+# Obsidian — ignore only per-user/machine state, keep shared vault config tracked
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Secrets and local environment — never commit
+.env
+.env.*
+!.env.example
+*.local
+
+# Jekyll / GitHub Pages build output (docs/)
+docs/_site/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+docs/.sass-cache/
+.bundle/
+vendor/
+
+# Node (e.g. MCP servers pulled via npx)
+node_modules/
+npm-debug.log*
+
+# Logs and temp files
+*.log
+*.tmp
