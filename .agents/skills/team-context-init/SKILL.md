@@ -113,6 +113,7 @@ Keep the rules-vs-conventions distinction throughout: a **Rule** is mandatory an
 - `AI/Rules/` (`AI Rule - <topic>.md`): how automated assistants should behave in this repo.
 - `AI/Prompts/` (`AI Prompt - <topic>.md`): a shared, human-facing prompt library for tools where skills can't be used directly.
 - `AI/Personas/` (`AI Persona - <name>.md`): optional agent/role definitions.
+- `AI/Plans/` (`YYYY-MM-DD - AI Plan - <title>.md`): plans for AI initiatives and for work on this repository.
 - `AI/Memory/` and `AI/Conversations/` are time-bound (`YYYY/MM/...`) and normally accumulate over time — leave them empty at init unless the user already has durable context or transcripts to seed.
 - Never commit secrets, tokens, or personal data; redact transcripts.
 

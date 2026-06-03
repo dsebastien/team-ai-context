@@ -54,6 +54,7 @@ Use `AI/` for AI- and agent-related context. This is curated knowledge, kept sep
 - `AI/Rules/` — agent-behavior rules and guardrails for this repository
 - `AI/Prompts/` — a shared, human-facing prompt library: prompts team members copy and paste into AI tools, useful when a skill cannot be used directly
 - `AI/Personas/` — optional agent or role definitions
+- `AI/Plans/` — plans for AI initiatives and for work on this repository
 
 `AI/Rules/` is for how agents should behave in this repository; mandatory team and operating rules stay in `Rules/`. The repository's `AGENTS.md` is the short entry point that links into `AI/Rules/` and `AI/Memory/`.
 
@@ -255,6 +256,7 @@ The `AI/` workspace uses its own patterns:
 - `AI/Rules/AI Rule - <topic>.md`
 - `AI/Prompts/AI Prompt - <topic>.md`
 - `AI/Personas/AI Persona - <name>.md`
+- `AI/Plans/YYYY-MM-DD - AI Plan - <title>.md`
 
 ## How Notes Relate
 

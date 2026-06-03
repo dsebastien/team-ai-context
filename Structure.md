@@ -29,7 +29,7 @@ These root notes are intentionally lightweight. Use them as entry points, then k
 - `Resources/`: reusable templates, scripts, and references
 - `Responsibilities/`: responsibility groups and ownership areas
 - `Communication/`: how the team communicates — style, tone, channels, and mandatory communication rules
-- `AI/`: AI- and agent-related context: conversations, memory, agent rules, prompts, and personas
+- `AI/`: AI- and agent-related context: conversations, memory, plans, agent rules, prompts, and personas
 - `Archives/`: archived (inactive) items, mirroring the root structure
 - `docs/`: GitHub Pages-friendly user guide
 
@@ -199,6 +199,8 @@ transcripts before saving.
   - `AI/Prompts/AI Prompt - <topic>.md`
 - `AI/Personas/`: optional agent or role definitions.
   - `AI/Personas/AI Persona - <name>.md`
+- `AI/Plans/`: plans for AI- and agent-related initiatives and for work on this repository.
+  - `AI/Plans/YYYY-MM-DD - AI Plan - <title>.md`
 
 Keep `AI/` subfolders empty except for `.gitkeep` until you have real content to add.
 
