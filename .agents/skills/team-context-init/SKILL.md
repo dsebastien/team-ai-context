@@ -107,6 +107,19 @@ Go section by section, in the priority order below (it mirrors the `AGENTS.md` r
 2. Re-run the audit script. Every remaining stub/empty item must be a section the user **chose** to defer (still `.gitkeep`), not an oversight.
 3. Summarize for the user: what was filled in, what was intentionally left empty, and the suggested next notes (first `Plans/`, `Decisions/`, `Meetings/`, `History/` entries, using the dated naming patterns in `Structure.md`).
 
+### 6) Tear down the init tooling
+
+This skill is single-use bootstrap scaffolding. A populated team repo should not keep an "initialize from the template" skill around — it is dead weight and can misfire via implicit invocation. Once init is otherwise complete, offer to remove the apparatus and, on the user's confirmation, delete:
+
+- `.agents/skills/team-context-init/` — this skill and its `scripts/`
+- `.claude/commands/team-context-init.md` — the Claude Code command
+- `.github/prompts/team-context-init.prompt.md` — the Copilot prompt
+- any pointer to this skill/command in `AGENTS.md` or other instruction files
+
+Use `git rm -r` where files are tracked. Removing the skill folder mid-run is safe — these instructions are already loaded in context, so finish the teardown after deleting them.
+
+If the user wants to keep the tooling (e.g. a template fork that will spawn more sub-team repos), skip this step and say so in the summary.
+
 ## Validation Checklist
 
 Init is complete when:
@@ -117,3 +130,4 @@ Init is complete when:
 5. `LICENSE` names the correct copyright holder.
 6. Every populated note uses correct paths, naming, and `[[...]]` wikilinks per `Structure.md`.
 7. The audit script's only remaining items are sections the user explicitly chose to leave empty.
+8. The init tooling (this skill, the Claude command, the Copilot prompt, and any instruction-file pointer to them) has been removed — unless the user explicitly chose to keep it.
