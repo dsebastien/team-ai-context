@@ -98,7 +98,8 @@ Keep the note lightweight.
 
 ### Rules
 
-Use `Rules/` for mandatory rules that apply to the team, a function, or a way of working.
+Use `Rules/` for mandatory rules about the people on the team and how they work together — the team's "must" and "never": things to always respect and things to never do.
+This is distinct from `AI/Rules/` (how automated assistants should behave) and from `Projects/Project Rules.md` and `Repositories/Repository Rules.md` (mandatory rules specific to project or repository work).
 Keep `Rules/` empty except for `.gitkeep` until you have real rule notes to add.
 
 ### Customers
@@ -115,20 +116,34 @@ Store project or initiative notes in:
 Notes:
 
 - Use `Projects/Project Conventions.md` for team-wide project conventions.
+- Use `Projects/Project Rules.md` for mandatory rules that must be followed when working on any project.
 - Keep `Projects/` empty except for `.gitkeep` until you create real project folders.
 - Create a project folder only when there is an actual initiative to document.
 - Use one main note per project folder.
+
+Rules vs conventions:
+
+- `Project Rules.md` is for mandatory, enforced rules — the "must".
+- `Project Conventions.md` is for recommended, stable practices — the "should".
+- Mandatory rules that apply team-wide, not just to project work, stay under `Rules/`. `Project Rules.md` is the project-specific complement; cross-link the two when they relate.
 
 ### Repositories
 
 If you track repositories here, organize them by forge or platform, then by org/group:
 
 - Use `Repositories/Repository Conventions.md` for team-wide repository conventions.
+- Use `Repositories/Repository Rules.md` for mandatory rules that must be followed when working with any repository.
 - `Repositories/<forge>/<group>/Repository - <name>.md`
 
 Example:
 
 - `Repositories/GitHub/example-org/Repository - example-template.md`
+
+Rules vs conventions:
+
+- `Repository Rules.md` is for mandatory, enforced rules — the "must" (for example: never force-push to a protected branch, no secrets in commits, required checks must pass before a pull request).
+- `Repository Conventions.md` is for recommended, stable practices — the "should" (for example: branch naming, commit message style, how repository notes are grouped).
+- Mandatory rules that apply team-wide, not just to repository work, stay under `Rules/`. `Repository Rules.md` is the repository-specific complement; cross-link the two when they relate.
 
 ### Responsibilities
 

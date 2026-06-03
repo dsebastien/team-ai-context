@@ -27,8 +27,8 @@ Any automated assistant used with this repository should follow these rules.
   - a repository documented under `Repositories/`
   - a process, responsibility, or organizational topic documented elsewhere in the repository
   - ...
-- When working on a project for the first time, read [[Projects/Project Conventions]].
-- When working on a repository for the first time, read [[Repositories/Repository Conventions]].
+- When working on a project for the first time, read [[Projects/Project Conventions]] and [[Projects/Project Rules]].
+- When working on a repository for the first time, read [[Repositories/Repository Conventions]] and [[Repositories/Repository Rules]].
 - Read the relevant notes before making changes.
 - If an external source code repository is involved:
   - verify it is available locally

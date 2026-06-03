@@ -140,7 +140,9 @@ Use `Customers/` for stakeholder, customer, audience, or beneficiary context.
 
 ### Rules
 
-Use `Rules/` for mandatory rules. Split rules into separate notes when different domains need different mandatory guidance.
+Use `Rules/` for mandatory rules about the people on the team and how they work together — the team's "must" and "never": things to always respect and things to never do. Split rules into separate notes when different domains need different mandatory guidance.
+
+This is human conduct and ways of working, distinct from `AI/Rules/` (how automated assistants should behave) and from `Projects/Project Rules.md` / `Repositories/Repository Rules.md` (mandatory rules specific to project or repository work).
 
 ### Projects
 

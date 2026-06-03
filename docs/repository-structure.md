@@ -90,10 +90,13 @@ Keep `Projects/` empty until you have a real initiative to document.
 
 When you do:
 
-- keep `Projects/Project Conventions.md` for shared project conventions
+- keep `Projects/Project Conventions.md` for shared project conventions (recommended practices — the "should")
+- keep `Projects/Project Rules.md` for mandatory rules that must be followed when working on any project (the "must")
 - create one folder per project or initiative
 - add one main note named after that project
 - link it to related responsibilities, plans, or repositories when relevant
+
+Team-wide mandatory rules that are not specific to project work stay under `Rules/`.
 
 ## Repositories
 
@@ -101,10 +104,14 @@ Keep `Repositories/` empty until you have real repository notes to track.
 
 When you do:
 
-- keep `Repositories/Repository Conventions.md` for shared repository conventions
+- keep `Repositories/Repository Conventions.md` for shared repository conventions (recommended practices — the "should")
+- keep `Repositories/Repository Rules.md` for mandatory rules that must be followed when working with any repository (the "must")
 - group notes by forge or platform
 - then group them by org, team, namespace, or similar structure when useful
 - add repository notes only when they provide useful context for the team
+
+Team-wide mandatory rules that are not specific to repository work stay under `Rules/`.
+
 ## Responsibilities
 
 Keep `Responsibilities/` minimal until you are ready to define real ownership areas.
@@ -141,12 +148,23 @@ Use `Team/` for team-specific context such as:
 
 ## Rules
 
-Use `Rules/` for mandatory guidance such as:
+Use `Rules/` for mandatory rules about the people on the team and how they work together. These are the team's "must" and "never" statements — things to always respect and things to never do.
 
+Examples:
+
+- things to never do (for example: never share customer data externally, never bypass review)
+- things to always respect (for example: working agreements, on-call etiquette, decision rights)
 - security rules
 - approval rules
 - documentation rules
 - change control rules
+
+`Rules/` is about human conduct and ways of working together. It is distinct from:
+
+- `AI/Rules/` — how automated assistants should behave in this repository
+- `Projects/Project Rules.md` and `Repositories/Repository Rules.md` — mandatory rules specific to working on a project or a repository
+
+Cross-link these when a team rule and a domain rule relate.
 
 ## Root Note Style
 
