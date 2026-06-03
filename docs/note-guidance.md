@@ -12,7 +12,7 @@ Use this page for guidance about what different note types should usually contai
 These root notes are intentionally minimal in the repository:
 
 - `Team Conventions.md`
-- `Team Definition of Done.md`
+- `Definition of Done.md`
 - `Terms and Abbreviations.md`
 
 Keep the note itself short and direct. Add only the information that the team wants to keep front and center.
@@ -29,7 +29,7 @@ Use this note for stable, non-mandatory conventions such as:
 
 If a convention becomes a full workflow, move the detailed steps to `Processes/`.
 
-### Team Definition of Done
+### Definition of Done
 
 Use this note for the quality bar work should usually meet before it is considered complete, such as:
 
@@ -144,7 +144,7 @@ Use `Rules/` for mandatory rules. Split rules into separate notes when different
 
 ### Projects
 
-Use `Projects/` for initiative-level notes. Keep `Projects/Conventions.md` for shared conventions about how project notes are organized and linked.
+Use `Projects/` for initiative-level notes. Keep `Projects/Project Conventions.md` for shared conventions about how project notes are organized and linked.
 
 ### Repositories
 

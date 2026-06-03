@@ -18,7 +18,7 @@ It is designed to work for most organizations, not just software teams. You can 
 2. Read [[docs/getting-started]].
 3. Add team identity notes under `Team/` and update [[Terms and Abbreviations]].
 4. Add organization context notes under `Company/` and stakeholder/customer notes under `Customers/`.
-5. Define your mandatory rules under `Rules/`, then fill [[Team Conventions]] and [[Team Definition of Done]].
+5. Define your mandatory rules under `Rules/`, then fill [[Team Conventions]] and [[Definition of Done]].
 6. Tailor the `Responsibilities/` folder to match your ownership model.
 7. Add your first real entries under `Projects/`, `Plans/`, `Decisions/`, `Meetings/`, and `History/`.
 
@@ -39,7 +39,7 @@ It is designed to work for most organizations, not just software teams. You can 
 ## Core Notes
 
 - [[Team Conventions]]
-- [[Team Definition of Done]]
+- [[Definition of Done]]
 - [[Structure]]
 
 ## Publishing the User Guide

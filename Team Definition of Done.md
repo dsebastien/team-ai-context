@@ -1,3 +1,0 @@
-# Team Definition of Done
-
-...

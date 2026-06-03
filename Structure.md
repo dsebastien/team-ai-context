@@ -4,7 +4,7 @@ This repository is structured to separate stable team context from time-based re
 
 ## Root Notes
 
-- [[Team Definition of Done]]: quality and completion criteria
+- [[Definition of Done]]: quality and completion criteria
 - [[Team Conventions]]: stable team conventions
 - [[Terms and Abbreviations]]: shared glossary
 
@@ -85,9 +85,9 @@ Keep `Team/` empty except for `.gitkeep` until you have real team notes to add.
 Use `Team Conventions.md` for non-mandatory working conventions that help the team stay consistent.
 Keep the note lightweight.
 
-### Team Definition of Done
+### Definition of Done
 
-Use `Team Definition of Done.md` for the quality bar that work should meet before it is considered complete.
+Use `Definition of Done.md` for the quality bar that work should meet before it is considered complete.
 Keep the note lightweight.
 
 ### Terms and Abbreviations
@@ -113,7 +113,7 @@ Store project or initiative notes in:
 
 Notes:
 
-- Use `Projects/Conventions.md` for team-wide project conventions.
+- Use `Projects/Project Conventions.md` for team-wide project conventions.
 - Keep `Projects/` empty except for `.gitkeep` until you create real project folders.
 - Create a project folder only when there is an actual initiative to document.
 - Use one main note per project folder.

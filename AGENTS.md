@@ -12,7 +12,7 @@ Any automated assistant used with this repository should follow these rules.
 
 ## Always
 
-- Respect mandatory rules documented under `Rules/`, along with [[Team Conventions]] and [[Team Definition of Done]].
+- Respect mandatory rules documented under `Rules/`, along with [[Team Conventions]] and [[Definition of Done]].
 - Use Obsidian-style wikilinks (`[[...]]`) for links between repository notes.
 - Keep cross-links consistent:
   - projects should link to responsibilities when relevant
@@ -25,7 +25,7 @@ Any automated assistant used with this repository should follow these rules.
   - a team/portfolio initiative documented under `Projects/`
   - a repository documented under `Repositories/`
   - a process, responsibility, or organizational topic documented elsewhere in the repository
-- When working on a project for the first time, read [[Projects/Conventions]].
+- When working on a project for the first time, read [[Projects/Project Conventions]].
 - When working on a repository for the first time, read [[Repositories/Repository Conventions]].
 - Read the relevant notes before making changes.
 - If an external repository/workspace is involved:

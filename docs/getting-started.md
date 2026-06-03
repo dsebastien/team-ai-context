@@ -20,7 +20,7 @@ Use this sequence after creating a repository from the template.
 Update the core root notes:
 
 - `Team Conventions.md`
-- `Team Definition of Done.md`
+- `Definition of Done.md`
 - `Terms and Abbreviations.md`
 
 Keep those three notes light. Use the repository docs for the fuller guidance about what they should contain.
@@ -28,7 +28,7 @@ Keep those three notes light. Use the repository docs for the fuller guidance ab
 Then add the team-wide convention notes as needed:
 
 - notes under `Rules/` for mandatory rules
-- `Projects/Conventions.md` for shared project conventions
+- `Projects/Project Conventions.md` for shared project conventions
 - `Repositories/Repository Conventions.md` for shared repository conventions
 
 ## 3. Shape the Ownership Model
@@ -71,7 +71,7 @@ Start adding:
   - `Structure.md`
   - `AGENTS.md`
   - `Team Conventions.md`
-  - `Team Definition of Done.md`
+  - `Definition of Done.md`
 - confirm they can find the notes relevant to their role
 - confirm they understand how projects, responsibilities, plans, and repositories are documented
 
@@ -91,7 +91,7 @@ In the repository notes, use Obsidian-style links between related notes so the c
 For root notes such as:
 
 - `Team Conventions.md`
-- `Team Definition of Done.md`
+- `Definition of Done.md`
 - `Terms and Abbreviations.md`
 
 keep the note itself short, then put the richer explanation in `Structure.md` and the docs site.

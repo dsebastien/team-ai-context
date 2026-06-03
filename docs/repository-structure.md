@@ -71,7 +71,7 @@ Keep `Projects/` empty until you have a real initiative to document.
 
 When you do:
 
-- keep `Projects/Conventions.md` for shared project conventions
+- keep `Projects/Project Conventions.md` for shared project conventions
 - create one folder per project or initiative
 - add one main note named after that project
 - link it to related responsibilities, plans, or repositories when relevant
@@ -134,7 +134,7 @@ Use `Rules/` for mandatory guidance such as:
 For lightweight root notes such as:
 
 - `Team Conventions.md`
-- `Team Definition of Done.md`
+- `Definition of Done.md`
 - `Terms and Abbreviations.md`
 
 prefer a minimal placeholder in the note itself and keep the fuller explanation in:
