@@ -1,0 +1,14 @@
+source "https://rubygems.org"
+
+# Local preview of the docs site:
+#   cd docs && bundle install && bundle exec jekyll serve
+#
+# The site is built with the Just the Docs theme pulled via remote_theme
+# (see _config.yml), so the theme itself is not pinned here.
+
+gem "jekyll", "~> 4.3"
+gem "jekyll-remote-theme"
+
+# Silences "To use retry middleware with Faraday v2.0+, install faraday-retry"
+# emitted by jekyll-remote-theme's HTTP client.
+gem "faraday-retry"

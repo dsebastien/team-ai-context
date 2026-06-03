@@ -1,7 +1,13 @@
 title: Team Context Template
 description: User guide for the Team Context Template repository.
-url: https://<your-org-or-user>.github.io
-baseurl: /<repository-name>
+
+# Leave url/baseurl blank for local preview (jekyll serve). Do NOT use angle
+# brackets — they are invalid URI characters and break the build. When you
+# publish to a GitHub project site, set them like:
+#   url: https://your-org.github.io
+#   baseurl: /your-repository
+url: ""
+baseurl: ""
 
 remote_theme: just-the-docs/just-the-docs
 
@@ -9,7 +15,8 @@ plugins:
   - jekyll-remote-theme
 
 aux_links:
-  GitHub Repository: https://github.com/<owner>/<repository>
+  GitHub Repository:
+    - https://github.com/your-org/your-repository
 
 search_enabled: true
 search:
