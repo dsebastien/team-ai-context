@@ -61,6 +61,8 @@ Use the output as the checklist for the interview. Do not stop until each report
 
 Go section by section, in the priority order below (it mirrors the `AGENTS.md` reading order). Ask focused questions, then write the answers into the correct files. Prefer the AskUserQuestion tool for choices, plain questions for free text. Ask in small batches; do not dump every question at once. After each section, write the note(s) before moving on.
 
+Keep the rules-vs-conventions distinction throughout: a **Rule** is mandatory and enforced ("must / never"); a **Convention** is a recommended, stable practice ("should").
+
 **a. Team identity** → `Team/`, `README.md`
 - Team name, mission/mandate, members and roles, internal sub-groups, operating model.
 - Replace the `Team Context Template` title and template blurb in `README.md` with the real team's identity. Add identity notes under `Team/` (e.g. `Team/Overview.md`, `Team/Members.md`).
@@ -74,31 +76,44 @@ Go section by section, in the priority order below (it mirrors the `AGENTS.md` r
 **d. Stakeholders / customers** → `Customers/`
 - Customer groups, internal partner teams, audiences, service expectations. Add notes where useful.
 
-**e. Mandatory rules** → `Rules/`
-- Security, approval, change-control, documentation rules. One note per domain when they differ.
+**e. Team rules** → `Rules/`
+- Mandatory rules about the people on the team and how they work together — the "must" and "never": things to always respect and things to never do (security, approval, change-control, documentation, conduct). One note per domain when they differ. This is human conduct, distinct from `AI/Rules/` and the per-domain Project/Repository rules below.
 
 **f. Team conventions** → `Team Conventions.md`
-- Stable, non-mandatory working conventions (naming, documentation, linking, collaboration habits). Replace the `...` stub; keep it short. Move any full workflow into `Processes/`.
+- Stable, non-mandatory working conventions (naming, documentation, linking, collaboration habits). Replace the `...` stub; keep it short. Move any full workflow into `Processes/`; keep communication detail in `Communication/` and link to it.
 
 **g. Definition of Done** → `Definition of Done.md`
 - The quality bar before work is complete (validation, review, documentation, handoff expectations). Replace the `...` stub; keep it outcome-focused.
 
-**h. Responsibilities** → `Responsibilities/`
+**h. Communication** → `Communication/`
+- How the team communicates, for people and for assistants drafting on its behalf. Replace the `...` stubs:
+  - `Communication Rules.md` (mandatory "must / never"), `Communication Conventions.md` (recommended "should")
+  - `Writing Style.md` (grammar, formatting, do/don't), `Tone of Voice.md` (voice per audience — include good/bad examples), `Channels.md` (which channel for what, info-sharing & response norms, escalation)
+- Keep reusable message templates in `Resources/Templates/`. Cross-link `Customers/` (who) with `Communication/` (how).
+
+**i. Responsibilities** → `Responsibilities/`
 - Durable ownership areas. Create one folder per real area only when the user can name it. Cross-link to related projects/repos/plans.
 
-**i. Project conventions + first projects** → `Projects/Project Conventions.md`, `Projects/<name>/<name>.md`
-- Replace the conventions `...` stub with how project notes are organized/linked. Create a folder + main note per real, current initiative. Link projects to responsibilities.
+**j. Project conventions, rules + first projects** → `Projects/Project Conventions.md`, `Projects/Project Rules.md`, `Projects/<name>/<name>.md`
+- Replace the `...` stubs: `Project Conventions.md` (how project notes are organized/linked — "should") and `Project Rules.md` (mandatory rules for project work — "must"). Create a folder + main note per real, current initiative. Link projects to responsibilities.
 
-**j. Repository conventions + tracked repos** → `Repositories/Repository Conventions.md`, `Repositories/<forge>/<group>/Repository - <name>.md`
-- Replace the conventions `...` stub. Add repo notes grouped by forge then org/group, only if the team tracks repos here. Link repos to responsibilities.
+**k. Repository conventions, rules + tracked repos** → `Repositories/Repository Conventions.md`, `Repositories/Repository Rules.md`, `Repositories/<forge>/<group>/Repository - <name>.md`
+- Replace the `...` stubs: `Repository Conventions.md` ("should") and `Repository Rules.md` (mandatory rules for repository work — "must"). Add repo notes grouped by forge then org/group, only if the team tracks repos here. Link repos to responsibilities.
 
-**k. Processes** → `Processes/`
+**l. Processes** → `Processes/`
 - Repeatable workflows/procedures the team runs. One note per process.
 
-**l. Tooling & MCP** → `.mcp.json`, `Resources/`
+**m. AI workspace** → `AI/`
+- `AI/Rules/` (`AI Rule - <topic>.md`): how automated assistants should behave in this repo.
+- `AI/Prompts/` (`AI Prompt - <topic>.md`): a shared, human-facing prompt library for tools where skills can't be used directly.
+- `AI/Personas/` (`AI Persona - <name>.md`): optional agent/role definitions.
+- `AI/Memory/` and `AI/Conversations/` are time-bound (`YYYY/MM/...`) and normally accumulate over time — leave them empty at init unless the user already has durable context or transcripts to seed.
+- Never commit secrets, tokens, or personal data; redact transcripts.
+
+**n. Tooling & MCP** → `.mcp.json`, `Resources/`
 - Replace the `example-server` placeholder in `.mcp.json` with real MCP servers, or remove the file if unused. Add tool notes under `Resources/Tools/`, scripts under `Resources/Scripts/`, templates under `Resources/Templates/`.
 
-**m. License** → `LICENSE`
+**o. License** → `LICENSE`
 - Confirm the copyright holder line names the right owner.
 
 ### 5) Cross-link and finalize
