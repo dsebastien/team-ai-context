@@ -116,6 +116,8 @@ Keep the rules-vs-conventions distinction throughout: a **Rule** is mandatory an
 **o. License** → `LICENSE`
 - Confirm the copyright holder line names the right owner.
 
+`Archives/`, `AI/Conversations/`, and `AI/Memory/` stay empty at init — they fill over time (archiving items, accumulating transcripts/memory). Do not interview for them; leave their `.gitkeep` in place.
+
 ### 5) Cross-link and finalize
 
 1. Apply the cross-linking rules from `Structure.md`: projects/repositories/plans link to responsibilities, and responsibilities link back.

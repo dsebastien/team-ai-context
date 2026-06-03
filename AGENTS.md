@@ -15,6 +15,7 @@ Any automated assistant used with this repository should follow these rules.
 
 - Respect mandatory rules documented under `Rules/`, the agent-behavior rules under `AI/Rules/`, along with [[Team Conventions]] and [[Definition of Done]].
 - Use Obsidian-style wikilinks (`[[...]]`) for links between repository notes.
+- Treat `Archives/` as inactive history: read active folders first and consult `Archives/` only for past reference; never present archived content as current.
 - Keep cross-links consistent:
   - projects should link to responsibilities when relevant
   - repositories should link to responsibilities when relevant

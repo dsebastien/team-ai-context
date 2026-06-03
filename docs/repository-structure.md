@@ -73,6 +73,18 @@ Reusable message templates (announcements, customer replies, release notes) live
 
 Automated assistants should read `Writing Style`, `Tone of Voice`, and `Communication Rules` before drafting any internal or outbound communication.
 
+## Archives
+
+Use `Archives/` to keep items that are no longer active without losing where they lived. It mirrors the root structure: to archive an item at `<Folder>/<path>`, move it to `Archives/<Folder>/<path>`.
+
+For example, archiving a finished project moves `Projects/Acme/Acme.md` to `Archives/Projects/Acme/Acme.md`.
+
+- `Archives/` stays empty (just `.gitkeep`) by default. Each `Archives/<Folder>/` is created the first time you archive something into it — the full mirror is not pre-created.
+- Archive whole items, not the convention or rules stub notes.
+- Treat archived content as inactive history, not current guidance.
+- Append-only logs (`Decisions/`, `History/`, `Meetings/`) are usually left in place rather than archived.
+- Prefer name-based wikilinks (`[[Acme]]`) so links survive the move; update any path-based links when you archive an item.
+
 ## Empty Folders vs Placeholder Notes
 
 This template prefers empty folders with `.gitkeep` files over placeholder notes that repeat the structure guidance.
@@ -95,6 +107,7 @@ Use that pattern for folders such as:
 - `AI/Rules/`
 - `AI/Prompts/`
 - `AI/Personas/`
+- `Archives/`
 
 `Team/`, `Company/`, `Customers/`, `Rules/`, and `Responsibilities/` also start empty by default. Add real notes there only when you have useful context to capture.
 

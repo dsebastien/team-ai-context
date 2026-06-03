@@ -167,3 +167,7 @@ Use `Communication/` for how the team communicates, for both people and automate
 - `Channels.md` — which channel for what, information-sharing norms, response-time expectations, and escalation
 
 Keep reusable message templates in `Resources/Templates/`. Describe *how* the team communicates here and *who* stakeholders are under `Customers/`; cross-link the two.
+
+### Archives
+
+Use `Archives/` for items that are no longer active. It mirrors the root structure, so an archived item keeps its original path under `Archives/` (for example, `Projects/Acme/` becomes `Archives/Projects/Acme/`). Keep it empty by default and create each `Archives/<Folder>/` only when you first archive into it. Treat archived notes as inactive history rather than current guidance.

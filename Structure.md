@@ -28,6 +28,7 @@ These root notes are intentionally lightweight. Use them as entry points, then k
 - `Responsibilities/`: responsibility groups and ownership areas
 - `Communication/`: how the team communicates — style, tone, channels, and mandatory communication rules
 - `AI/`: AI- and agent-related context: conversations, memory, agent rules, prompts, and personas
+- `Archives/`: archived (inactive) items, mirroring the root structure
 - `docs/`: GitHub Pages-friendly user guide
 
 ## Naming Conventions
@@ -194,6 +195,19 @@ Notes:
 - `Communication/` holds *how* the team communicates; `Customers/` holds *who* stakeholders are — cross-link rather than duplicate.
 - Mandatory rules about general team conduct stay under `Rules/`; `Communication Rules.md` is the communication-specific complement.
 - Keep `Team Conventions.md` lightweight and link to `Communication/` for the detail.
+
+### Archives
+
+Use `Archives/` to retain items that are no longer active while preserving where
+they lived. `Archives/` mirrors the root structure: to archive an item at
+`<Folder>/<path>`, move it to `Archives/<Folder>/<path>`. For example, archiving a
+finished project moves `Projects/Acme/Acme.md` to `Archives/Projects/Acme/Acme.md`.
+
+- Keep `Archives/` empty except for `.gitkeep` by default. Create each `Archives/<Folder>/` lazily, on the first item archived into it — do not pre-create the full mirror.
+- Archive whole items (a project folder, a repository note, a plan), not the convention or rules stubs.
+- Archived content is inactive history: treat it as a record, not as current guidance.
+- Append-only logs (`Decisions/`, `History/`, `Meetings/`) are usually not archived; they already record the past.
+- Links: prefer name-based wikilinks (`[[Acme]]`) over path-based ones (`[[Projects/Acme/Acme]]`) so links survive a move. When you archive an item, update any path-based links that pointed to it.
 
 ## Cross-Linking Rules
 
