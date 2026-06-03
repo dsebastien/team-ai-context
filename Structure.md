@@ -22,6 +22,7 @@ These root notes are intentionally lightweight. Use them as entry points, then k
 - `Meetings/`: meeting notes
 - `Plans/`: plans and roadmaps
 - `Processes/`: repeatable workflows and procedures
+- `Routines/`: recurring, cadence-based team practices (rituals/ceremonies)
 - `Projects/`: business, delivery, or initiative-level work items
 - `Repositories/`: source or configuration repositories, when relevant
 - `Resources/`: reusable templates, scripts, and references
@@ -195,6 +196,23 @@ Notes:
 - `Communication/` holds *how* the team communicates; `Customers/` holds *who* stakeholders are — cross-link rather than duplicate.
 - Mandatory rules about general team conduct stay under `Rules/`; `Communication Rules.md` is the communication-specific complement.
 - Keep `Team Conventions.md` lightweight and link to `Communication/` for the detail.
+
+### Routines
+
+Use `Routines/` for the team's recurring, cadence-based practices — standups,
+retrospectives, planning, reviews, 1:1s, on-call handoffs, demos, reporting
+rhythms. A routine is defined by its cadence, purpose, and format.
+
+- One note per routine: `Routines/Routine - <name>.md`.
+- Record cadence (daily/weekly/sprint/monthly/quarterly) as a field in the note, not as subfolders.
+- Each note covers: cadence, purpose/outcome, owner/facilitator, participants, format/agenda, timing and duration, channel, inputs/outputs, and related process and responsibility.
+- Keep `Routines/` empty except for `.gitkeep` until the team has real routines to document.
+
+Routines vs processes vs meetings:
+
+- `Routines/` is a recurring practice defined by *when and how often* (the rhythm). `Processes/` is an on-demand workflow defined by *the steps to complete a task*. A routine often runs a process — link them.
+- A routine's individual occurrences are recorded as dated notes under `Meetings/`; link the routine to its instances. Decisions and action items go to `Decisions/`.
+- A routine template can live in `Resources/Templates/`.
 
 ### Archives
 

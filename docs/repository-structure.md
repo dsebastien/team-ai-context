@@ -73,6 +73,17 @@ Reusable message templates (announcements, customer replies, release notes) live
 
 Automated assistants should read `Writing Style`, `Tone of Voice`, and `Communication Rules` before drafting any internal or outbound communication.
 
+## Routines
+
+Use `Routines/` for the team's recurring, cadence-based practices — standups, retrospectives, planning, reviews, 1:1s, on-call handoffs, demos, reporting rhythms.
+
+- one note per routine: `Routines/Routine - <name>.md`
+- record cadence (daily/weekly/sprint/monthly/quarterly) as a field inside the note, not as subfolders
+- cover cadence, purpose, owner/facilitator, participants, format/agenda, timing, channel, inputs/outputs, and related process and responsibility
+- keep `Routines/` empty until the team has real routines to document
+
+A routine is a recurring practice defined by *when and how often*; a process (`Processes/`) is an on-demand workflow defined by *its steps*. A routine often runs a process — link them. Individual occurrences are recorded as dated notes under `Meetings/`.
+
 ## Archives
 
 Use `Archives/` to keep items that are no longer active without losing where they lived. It mirrors the root structure: to archive an item at `<Folder>/<path>`, move it to `Archives/<Folder>/<path>`.
@@ -98,6 +109,7 @@ Use that pattern for folders such as:
 - `Meetings/`
 - `Plans/`
 - `Processes/`
+- `Routines/`
 - `Repositories/`
 - `Resources/Scripts/`
 - `Resources/Templates/`

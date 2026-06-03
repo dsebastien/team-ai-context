@@ -32,6 +32,7 @@ Any automated assistant used with this repository should follow these rules.
 - When working on a repository for the first time, read [[Repositories/Repository Conventions]] and [[Repositories/Repository Rules]].
 - Read the relevant notes before making changes.
 - When drafting any internal or outbound communication, follow [[Communication/Writing Style]], [[Communication/Tone of Voice]], and [[Communication/Communication Rules]].
+- When preparing, running, or summarizing a recurring practice, consult the relevant note under `Routines/`.
 - If an external source code repository is involved:
   - verify it is available locally
   - update safely without discarding local changes (ask questions if needed)

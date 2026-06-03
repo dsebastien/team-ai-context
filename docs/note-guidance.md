@@ -168,6 +168,10 @@ Use `Communication/` for how the team communicates, for both people and automate
 
 Keep reusable message templates in `Resources/Templates/`. Describe *how* the team communicates here and *who* stakeholders are under `Customers/`; cross-link the two.
 
+### Routines
+
+Use `Routines/` for recurring, cadence-based practices (standups, retros, planning, reviews, 1:1s, on-call handoffs). One note per routine, `Routine - <name>.md`, with cadence as a field. A routine note typically records cadence, purpose, owner, participants, format/agenda, timing, channel, and inputs/outputs. Distinct from `Processes/` (on-demand task workflows) and `Meetings/` (dated instances of a routine); cross-link them.
+
 ### Archives
 
 Use `Archives/` for items that are no longer active. It mirrors the root structure, so an archived item keeps its original path under `Archives/` (for example, `Projects/Acme/` becomes `Archives/Projects/Acme/`). Keep it empty by default and create each `Archives/<Folder>/` only when you first archive into it. Treat archived notes as inactive history rather than current guidance.
