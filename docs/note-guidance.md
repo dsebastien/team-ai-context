@@ -155,3 +155,15 @@ Use `Repositories/` for source or configuration repositories when relevant. Keep
 ### Responsibilities
 
 Use `Responsibilities/` for durable ownership areas. Create folders only when you are ready to name real areas of responsibility.
+
+### Communication
+
+Use `Communication/` for how the team communicates, for both people and automated assistants:
+
+- `Communication Rules.md` — mandatory communication rules (the "must" and "never")
+- `Communication Conventions.md` — recommended communication conventions (the "should")
+- `Writing Style.md` — grammar, formatting, structure, and do/don't
+- `Tone of Voice.md` — voice and tone per audience (customers, teammates, public); include good and bad examples, which also help AI draft in the team's voice
+- `Channels.md` — which channel for what, information-sharing norms, response-time expectations, and escalation
+
+Keep reusable message templates in `Resources/Templates/`. Describe *how* the team communicates here and *who* stakeholders are under `Customers/`; cross-link the two.

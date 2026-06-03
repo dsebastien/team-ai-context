@@ -26,6 +26,7 @@ These root notes are intentionally lightweight. Use them as entry points, then k
 - `Repositories/`: source or configuration repositories, when relevant
 - `Resources/`: reusable templates, scripts, and references
 - `Responsibilities/`: responsibility groups and ownership areas
+- `Communication/`: how the team communicates — style, tone, channels, and mandatory communication rules
 - `AI/`: AI- and agent-related context: conversations, memory, agent rules, prompts, and personas
 - `docs/`: GitHub Pages-friendly user guide
 
@@ -174,6 +175,25 @@ transcripts before saving.
   - `AI/Personas/AI Persona - <name>.md`
 
 Keep `AI/` subfolders empty except for `.gitkeep` until you have real content to add.
+
+### Communication
+
+Use `Communication/` for how the team communicates — guidance that serves both
+people and automated assistants drafting on the team's behalf. Keep these notes
+practical and example-rich.
+
+- `Communication/Communication Rules.md`: mandatory communication rules — the "must / never" (for example: never disclose customer data in public channels, never announce before sign-off).
+- `Communication/Communication Conventions.md`: recommended communication conventions — the "should".
+- `Communication/Writing Style.md`: grammar, formatting, and structure; do/don't.
+- `Communication/Tone of Voice.md`: voice and tone, adjusted per audience (customers, teammates, public).
+- `Communication/Channels.md`: which channel to use for what, information-sharing norms, response-time expectations, and escalation.
+
+Notes:
+
+- Reusable message templates (announcements, customer replies, release notes) live in `Resources/Templates/`, not here.
+- `Communication/` holds *how* the team communicates; `Customers/` holds *who* stakeholders are — cross-link rather than duplicate.
+- Mandatory rules about general team conduct stay under `Rules/`; `Communication Rules.md` is the communication-specific complement.
+- Keep `Team Conventions.md` lightweight and link to `Communication/` for the detail.
 
 ## Cross-Linking Rules
 

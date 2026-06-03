@@ -59,6 +59,20 @@ Use `AI/` for AI- and agent-related context. This is curated knowledge, kept sep
 
 Keep entries curated and free of secrets, tokens, or personal data; redact transcripts before saving.
 
+## Communication
+
+Use `Communication/` to document how the team communicates — guidance that serves both people and automated assistants drafting on the team's behalf.
+
+- `Communication/Communication Rules.md` — mandatory communication rules: the "must" and "never"
+- `Communication/Communication Conventions.md` — recommended communication conventions: the "should"
+- `Communication/Writing Style.md` — grammar, formatting, and structure; do/don't
+- `Communication/Tone of Voice.md` — voice and tone, adjusted per audience (customers, teammates, public)
+- `Communication/Channels.md` — which channel for what, information-sharing norms, response-time expectations, escalation
+
+Reusable message templates (announcements, customer replies, release notes) live in `Resources/Templates/`. `Communication/` describes *how* the team communicates; `Customers/` describes *who* stakeholders are — cross-link the two.
+
+Automated assistants should read `Writing Style`, `Tone of Voice`, and `Communication Rules` before drafting any internal or outbound communication.
+
 ## Empty Folders vs Placeholder Notes
 
 This template prefers empty folders with `.gitkeep` files over placeholder notes that repeat the structure guidance.
