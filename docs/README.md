@@ -8,7 +8,7 @@ permalink: /
 
 This site explains how to use the Team Context Template repository.
 
-The template helps teams document who they are, what they own, how they work, and how they track projects, decisions, plans, meetings, and history.
+The template helps teams document who they are, what they own, how they work, and how they track projects, goals, achievements, decisions, plans, meetings, and history.
 
 ## What You Will Find Here
 

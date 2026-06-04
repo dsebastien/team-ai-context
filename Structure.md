@@ -17,8 +17,9 @@ These root notes are intentionally lightweight. Use them as entry points, then k
 - `Customers/`: stakeholder, customer, audience, or beneficiary context
 - `Offerings/`: products and services the team provides
 - `Rules/`: mandatory team or operating rules
+- `Achievements/`: realized outcomes and accomplishments
 - `Decisions/`: decisions and rationale
-- `Goals/`: goals and outcomes
+- `Goals/`: goals and intended outcomes
 - `History/`: factual historical records
 - `Meetings/`: meeting notes
 - `Plans/`: plans and roadmaps
@@ -47,6 +48,15 @@ These root notes are intentionally lightweight. Use them as entry points, then k
 Store decision records in:
 
 - `Decisions/YYYY/MM/YYYY-MM-DD - Decision - <title>.md`
+
+### Achievements
+
+Store achievement records in:
+
+- `Achievements/YYYY/MM/YYYY-MM-DD - Achievement - <title>.md`
+
+Use `Achievements/` for notable outcomes the team has already delivered or realized.
+Use `Goals/` for intended outcomes and `History/` for factual events.
 
 ### History
 
@@ -250,7 +260,7 @@ finished project moves `Projects/Acme/Acme.md` to `Archives/Projects/Acme/Acme.m
 - Keep `Archives/` empty except for `.gitkeep` by default. Create each `Archives/<Folder>/` lazily, on the first item archived into it — do not pre-create the full mirror.
 - Archive whole items (a project folder, a repository note, a plan), not the convention or rules stubs.
 - Archived content is inactive history: treat it as a record, not as current guidance.
-- Append-only logs (`Decisions/`, `History/`, `Meetings/`) are usually not archived; they already record the past.
+- Append-only logs (`Achievements/`, `Decisions/`, `History/`, `Meetings/`) are usually not archived; they already record the past.
 - Links: prefer name-based wikilinks (`[[Acme]]`) over path-based ones (`[[Projects/Acme/Acme]]`) so links survive a move. When you archive an item, update any path-based links that pointed to it.
 
 ## How Notes Relate
@@ -273,6 +283,7 @@ Core spine:
 - An **offering** is owned by one responsibility, serves **customers**, is built or changed by **projects**, may live in **repositories**, is operated via **processes**/**routines**, and has issues reported through **communication** channels.
 - A **project** advances one or more **goals**, produces or changes **offerings**, uses **repositories** and tools, and is recorded through **decisions** and **meetings**.
 - A **goal** sets a target, is pursued by **projects** and **plans**, and is owned by a **responsibility**.
+- An **achievement** records a realized outcome and usually links back to the **goal**, **project**, **offering**, or **responsibility** it reflects.
 
 Work and cadence:
 
@@ -287,7 +298,7 @@ Meaning and communication:
 
 Records and lifecycle:
 
-- **Decisions** capture choices and rationale, **meetings** capture what happened, **history** is the factual timeline; **plans** and **goals** look forward.
+- **Achievements** capture realized outcomes, **decisions** capture choices and rationale, **meetings** capture what happened, **history** is the factual timeline; **plans** and **goals** look forward.
 - **AI/Rules** govern assistant behavior, **AI/Memory** holds durable context for assistants, **AI/Prompts** is a human prompt library, and **AI/Conversations** records notable sessions.
 - **Archives/** holds inactive copies of any of the above, mirroring the original folder.
 

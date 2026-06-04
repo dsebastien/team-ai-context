@@ -9,7 +9,7 @@ It is designed to work for most organizations, not just software teams. You can 
 - Team identity, rules, conventions, and definition of done
 - Organizational context and stakeholder landscape
 - Responsibilities and ownership boundaries
-- Projects, repositories, plans, goals, decisions, meeting notes, and history
+- Projects, repositories, plans, goals, achievements, decisions, meeting notes, and history
 - Reusable resources such as templates, scripts, and tool references
 
 ## Quick Start
@@ -20,7 +20,7 @@ It is designed to work for most organizations, not just software teams. You can 
 4. Add organization context notes under `Company/` and stakeholder/customer notes under `Customers/`.
 5. Define your mandatory rules under `Rules/`, then fill [[Team Conventions]] and [[Definition of Done]].
 6. Tailor the `Responsibilities/` folder to match your ownership model.
-7. Add your first real entries under `Projects/`, `Plans/`, `Decisions/`, `Meetings/`, and `History/`.
+7. Add your first real entries under `Projects/`, `Plans/`, `Goals/`, `Achievements/`, `Decisions/`, `Meetings/`, and `History/`.
 
 ## Repository Guide
 
@@ -32,7 +32,7 @@ It is designed to work for most organizations, not just software teams. You can 
 
 - Keep notes small, specific, and linkable.
 - Prefer explicit naming conventions over ad hoc file names.
-- Separate enduring responsibilities from time-bound projects and plans.
+- Separate enduring responsibilities from time-bound projects, plans, and achievements.
 - Keep private credentials, personal data, and internal-only secrets out of version control.
 - Use `[[...]]` links between notes in the repository content.
 

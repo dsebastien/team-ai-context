@@ -49,6 +49,8 @@ Adjust the rest of the repository structure to fit your team:
 
 Start adding:
 
+- goals
+- achievements
 - projects
 - plans
 - decisions
@@ -73,7 +75,7 @@ Start adding:
   - `Team Conventions.md`
   - `Definition of Done.md`
 - confirm they can find the notes relevant to their role
-- confirm they understand how projects, responsibilities, plans, and repositories are documented
+- confirm they understand how projects, responsibilities, goals, achievements, plans, and repositories are documented
 
 ## 8. Prepare for Publishing
 

@@ -66,6 +66,22 @@ Typical sections:
 - Consequences
 - Alternatives considered
 
+### Achievements
+
+Store achievement notes under:
+
+- `Achievements/YYYY/MM/YYYY-MM-DD - Achievement - <title>.md`
+
+Use `Achievements/` for significant outcomes the team has already delivered or realized.
+Use `Goals/` for intended outcomes and `History/` for factual events.
+
+Typical content:
+
+- outcome or accomplishment
+- date or period achieved
+- impact or evidence
+- related goals, projects, offerings, or responsibilities
+
 ### History
 
 Store factual records under:
