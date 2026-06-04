@@ -33,6 +33,7 @@ Some stable context belongs in folders rather than single root notes:
 These folders capture change over time:
 
 - `Achievements/`
+- `Problems/`
 - `Decisions/`
 - `Goals/`
 - `History/`
@@ -40,6 +41,7 @@ These folders capture change over time:
 - `Plans/`
 
 Use `Achievements/` for notable completed outcomes and accomplishments.
+Use `Problems/` for notable issues, pain points, and constraints the team wants to track over time.
 Keep `Goals/` for intended outcomes and `History/` for factual events.
 
 ## Optional Operational Layers
@@ -98,7 +100,7 @@ For example, archiving a finished project moves `Projects/Acme/Acme.md` to `Arch
 - `Archives/` stays empty (just `.gitkeep`) by default. Each `Archives/<Folder>/` is created the first time you archive something into it — the full mirror is not pre-created.
 - Archive whole items, not the convention or rules stub notes.
 - Treat archived content as inactive history, not current guidance.
-- Append-only logs (`Achievements/`, `Decisions/`, `History/`, `Meetings/`) are usually left in place rather than archived.
+- Append-only logs (`Achievements/`, `Problems/`, `Decisions/`, `History/`, `Meetings/`) are usually left in place rather than archived.
 - Prefer name-based wikilinks (`[[Acme]]`) so links survive the move; update any path-based links when you archive an item.
 
 ## Empty Folders vs Placeholder Notes
@@ -108,6 +110,7 @@ This template prefers empty folders with `.gitkeep` files over placeholder notes
 Use that pattern for folders such as:
 
 - `Achievements/`
+- `Problems/`
 - `Rules/`
 - `Decisions/`
 - `Goals/`
@@ -249,6 +252,7 @@ Use date-prefixed names for dated notes.
 Recommended patterns:
 
 - `YYYY-MM-DD - Achievement - <title>.md`
+- `YYYY-MM-DD - Problem - <title>.md`
 - `YYYY-MM-DD - Decision - <title>.md`
 - `YYYY-MM-DD - Event - <title>.md`
 - `YYYY-MM-DD - Meeting - <title>.md`
@@ -283,6 +287,7 @@ Responsibilities ──own──▶ Offerings ──serve──▶ Customers
 - A **project** advances one or more **goals**, produces or changes **offerings**, uses **repositories** and tools, and is recorded through **decisions** and **meetings**.
 - A **goal** sets a target, is pursued by **projects** and **plans**, and is owned by a **responsibility**.
 - An **achievement** records a realized outcome and usually links back to the **goal**, **project**, **offering**, or **responsibility** it reflects.
+- A **problem** records a notable issue or pain point and usually links to the **offering**, **goal**, **project**, or **responsibility** affected by it.
 
 **Work and cadence**
 
@@ -297,7 +302,7 @@ Responsibilities ──own──▶ Offerings ──serve──▶ Customers
 
 **Records and lifecycle**
 
-- **Achievements** capture realized outcomes, **decisions** capture choices and rationale, **meetings** capture what happened, **history** is the factual timeline; **plans** and **goals** look forward.
+- **Achievements** capture realized outcomes, **problems** capture notable issues, **decisions** capture choices and rationale, **meetings** capture what happened, **history** is the factual timeline; **plans** and **goals** look forward.
 - **AI/Rules** govern assistant behavior, **AI/Memory** holds durable context, **AI/Prompts** is a human prompt library, and **AI/Conversations** records notable sessions.
 - **Archives/** holds inactive copies of any of the above, mirroring the original folder.
 

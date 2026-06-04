@@ -18,6 +18,7 @@ These root notes are intentionally lightweight. Use them as entry points, then k
 - `Offerings/`: products and services the team provides
 - `Rules/`: mandatory team or operating rules
 - `Achievements/`: realized outcomes and accomplishments
+- `Problems/`: notable issues, pain points, and constraints
 - `Decisions/`: decisions and rationale
 - `Goals/`: goals and intended outcomes
 - `History/`: factual historical records
@@ -57,6 +58,15 @@ Store achievement records in:
 
 Use `Achievements/` for notable outcomes the team has already delivered or realized.
 Use `Goals/` for intended outcomes and `History/` for factual events.
+
+### Problems
+
+Store problem records in:
+
+- `Problems/YYYY/MM/YYYY-MM-DD - Problem - <title>.md`
+
+Use `Problems/` for notable issues, pain points, constraints, or recurring failures the team has identified.
+Use `History/` for factual events, `Decisions/` for choices, and `Plans/`/`Goals/` for intended responses.
 
 ### History
 
@@ -260,7 +270,7 @@ finished project moves `Projects/Acme/Acme.md` to `Archives/Projects/Acme/Acme.m
 - Keep `Archives/` empty except for `.gitkeep` by default. Create each `Archives/<Folder>/` lazily, on the first item archived into it — do not pre-create the full mirror.
 - Archive whole items (a project folder, a repository note, a plan), not the convention or rules stubs.
 - Archived content is inactive history: treat it as a record, not as current guidance.
-- Append-only logs (`Achievements/`, `Decisions/`, `History/`, `Meetings/`) are usually not archived; they already record the past.
+- Append-only logs (`Achievements/`, `Problems/`, `Decisions/`, `History/`, `Meetings/`) are usually not archived; they already record the past.
 - Links: prefer name-based wikilinks (`[[Acme]]`) over path-based ones (`[[Projects/Acme/Acme]]`) so links survive a move. When you archive an item, update any path-based links that pointed to it.
 
 ## How Notes Relate
@@ -284,6 +294,7 @@ Core spine:
 - A **project** advances one or more **goals**, produces or changes **offerings**, uses **repositories** and tools, and is recorded through **decisions** and **meetings**.
 - A **goal** sets a target, is pursued by **projects** and **plans**, and is owned by a **responsibility**.
 - An **achievement** records a realized outcome and usually links back to the **goal**, **project**, **offering**, or **responsibility** it reflects.
+- A **problem** records a notable issue or pain point and usually links to the **offering**, **goal**, **project**, or **responsibility** affected by it.
 
 Work and cadence:
 
@@ -298,7 +309,7 @@ Meaning and communication:
 
 Records and lifecycle:
 
-- **Achievements** capture realized outcomes, **decisions** capture choices and rationale, **meetings** capture what happened, **history** is the factual timeline; **plans** and **goals** look forward.
+- **Achievements** capture realized outcomes, **problems** capture notable issues, **decisions** capture choices and rationale, **meetings** capture what happened, **history** is the factual timeline; **plans** and **goals** look forward.
 - **AI/Rules** govern assistant behavior, **AI/Memory** holds durable context for assistants, **AI/Prompts** is a human prompt library, and **AI/Conversations** records notable sessions.
 - **Archives/** holds inactive copies of any of the above, mirroring the original folder.
 

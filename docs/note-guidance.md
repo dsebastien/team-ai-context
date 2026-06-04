@@ -82,6 +82,23 @@ Typical content:
 - impact or evidence
 - related goals, projects, offerings, or responsibilities
 
+### Problems
+
+Store problem notes under:
+
+- `Problems/YYYY/MM/YYYY-MM-DD - Problem - <title>.md`
+
+Use `Problems/` for significant issues, pain points, constraints, or recurring failures the team has identified.
+Use `History/` for factual events, `Decisions/` for choices, and `Plans/`/`Goals/` for intended responses.
+
+Typical content:
+
+- problem statement
+- who or what is affected
+- impact or evidence
+- current status or next step
+- related goals, projects, offerings, or responsibilities
+
 ### History
 
 Store factual records under:
